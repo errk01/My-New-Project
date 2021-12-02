@@ -1,7 +1,11 @@
 package com.company;
 
-public class Car extends Vehicle implements MethodsImpl{
+import java.util.ArrayList;
+
+public class Car extends Vehicle<V> {
     private String type;
+
+    ArrayList<Vehicle<V>> myList = new ArrayList<>();
 
     public Car(String make, String model, String color, int year, String engine, int doors, int wheels, String type) {
         super(make, model, color, year, engine, doors, wheels);
@@ -33,15 +37,21 @@ public class Car extends Vehicle implements MethodsImpl{
         return new String[0];
     }
 
-    @Override
-    public void hasTrunk() {
-        boolean truck = true;
-                if(truck){
-                    System.out.println("Has no trunk");
-                }else{
-                    System.out.println("Has trunk");
-                }
+//    @Override
+//    public void hasTrunk() {
+//        boolean truck = true;
+//                if(truck){
+//                    System.out.println("Has no trunk");
+//                }else{
+//                    System.out.println("Has trunk");
+//                }
+//
+//    }
 
+    public String  myNewCar( int num, int ...a){
+        for( int numOne : a){
+            System.out.println(numOne);
+        }
     }
 
 //    @Override

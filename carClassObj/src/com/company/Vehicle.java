@@ -1,6 +1,6 @@
 package com.company;
 
-public class Vehicle {
+public class Vehicle<V> {
     // fields
     private String make;
     private String model;
