@@ -13,7 +13,7 @@ public class Main {
             String location = "file.csv";
             File file = new File(location);
             FileWriter writer = new FileWriter(file, true);
-            writer.write("cs1234,Java, someone\n");
+            writer.write("cs1234,Java, some one\n");
             writer.close();
             Scanner input = new Scanner(file);
 //            String line = input.nextLine();
