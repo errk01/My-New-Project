@@ -12,8 +12,8 @@ public class Department {
     private int did;
     private String dname;
 
-//    @OneToMany(targetEntity = Teacher.class)
-//    private List<Teacher> teacherList;
+    @OneToMany(targetEntity = Teacher.class)
+    private List<Teacher> teacherList;
 
     public Department(int did, String dname) {
         super();
