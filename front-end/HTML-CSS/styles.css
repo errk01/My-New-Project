@@ -1,0 +1,19 @@
+.info_feilds{
+    text-align: left;
+    width: 280px;
+    margin: 5px;
+    /* padding:10px; */
+}
+.outter{
+    background: blue;
+    margin: 5px;
+    padding:10px;
+}
+
+.inner_div{
+    height: 480px;
+    width: 550px;
+    background: chartreuse;
+    padding: 10px;
+    margin: 10px;
+}
